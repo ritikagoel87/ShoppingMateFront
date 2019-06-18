@@ -353,7 +353,7 @@ export default class Webcam extends Component {
           localization = results[i].LocalizationResult;
           this.drawResult(context, localization, results[i].BarcodeText);
           // console.log(results[i].BarcodeText);
-          axios.get(`https://api.edamam.com/api/food-database/parser?upc=${results[i].BarcodeText}&app_id=c88141da&app_key=28f69ad3b826de6e44e98a7d18c4e81c`).then((res) => {
+          axios.get(`https://api.edamam.com/api/food-database/parser?upc=${results[i].BarcodeText}&app_id=${process.env.APP_ID}&app_key=${process.env.APP_KEY}`).then((res) => {
             console.log(res);
           })
         }

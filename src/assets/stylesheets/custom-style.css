@@ -1,6 +1,6 @@
 #home-container {
-  /* background-image: url('../images/bg_large.jpg'); */
   position: relative;
+  height: 100vh;
 }
 #home-container::after {
   content: "";

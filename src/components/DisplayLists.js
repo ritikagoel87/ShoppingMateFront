@@ -11,7 +11,7 @@ export default function DisplayList(props) {
         <Col>Created On</Col>
         <Col>Status</Col>
       </Row>
-      { props.lists.map(function(list, i){
+      { props.lists.length > 0 && props.lists.map(function(list, i){
         let status = "";
         if (list.list.completed) {
           status = "Complete";

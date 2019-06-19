@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import MainNavbar from './Navbar';
 import axios from 'axios';
+import DisplayList from './DisplayLists';
 
 const SERVER_URL = 'http://localhost:8080/shopping-lists';
 const SHAREDLISTS = 'http://localhost:8080/shared-lists';
@@ -33,8 +34,4 @@ export default class SharedLists extends Component {
       </div>
     )
   }
-}
-
-function DisplayList(props) {
-
 }

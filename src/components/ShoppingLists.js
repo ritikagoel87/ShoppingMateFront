@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MainNavbar from './Navbar';
+import Layout from './Layout';
 import axios from 'axios';
 import DisplayLists from './DisplayLists';
 
@@ -70,10 +70,9 @@ export default class ShoppingLists extends Component {
 
   render() {
     return (
-      <div>
-        <MainNavbar />
+      <Layout>
         <DisplayLists lists={this.state.lists} />
-      </div>
+      </Layout>
     )
   }
 }
